@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: saber-registry
+  profiles:
+    active: dev
+
+info:
+    project:
+        version: #project.version#

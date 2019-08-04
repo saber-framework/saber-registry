@@ -1,0 +1,17 @@
+server:
+  port: 8761
+spring:
+  profiles:
+    active: dev
+  application:
+    name: saber-registry
+
+
+
+eureka:
+  instance:
+      appname: saber-registry
+      instanceId: SaberRegistry:${spring.application.instance-id:${random.value}}
+      prefer-ip-address: true
+  server:
+    enable-self-preservation: false
